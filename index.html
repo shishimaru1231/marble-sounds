@@ -7,6 +7,11 @@
     <meta property="og:title" content="Marble Sounds @ AuthentiX vol.13">
     <meta property="og:description" content="2025.12.14(日) START 18:00 @ 横浜ライブハウス Y's">
     <title>Marble Sounds | AuthentiX vol.13</title>
+    
+    <!-- ファビコン設定 -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -231,18 +236,28 @@
         }
 
         .event-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
             position: relative;
             z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+            align-items: center;
         }
 
         .event-item {
             text-align: center;
+            width: 100%;
             opacity: 0;
             animation: fadeIn 1s forwards;
             animation-delay: calc(var(--delay) * 0.1s);
+            padding: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .event-item:last-child {
+            border-bottom: none;
         }
 
         @keyframes fadeIn {
@@ -456,6 +471,20 @@
             margin: 0 10px;
         }
 
+        .party-image {
+            margin-top: 60px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .party-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
         /* フッター */
         footer {
             background: var(--primary);
@@ -519,7 +548,7 @@
             }
 
             .event-grid {
-                gap: 40px;
+                gap: 30px;
             }
         }
 
@@ -655,6 +684,9 @@
                 </p>
                 <div class="party-details">
                     <span>時間</span> 20:00頃〜　<span>場所</span> 同会場にて
+                </div>
+                <div class="party-image">
+                    <img src="PARTY.png" alt="After Party イメージ">
                 </div>
             </div>
         </div>
