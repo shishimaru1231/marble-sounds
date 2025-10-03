@@ -465,10 +465,23 @@
             font-size: 1.1rem;
         }
 
+        .party-detail-item {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .party-detail-item:first-child {
+            margin-top: 0;
+        }
+
+        .party-detail-item:last-child {
+            margin-bottom: 0;
+        }
+
         .party-details span {
             color: var(--accent);
             font-weight: 500;
-            margin: 0 10px;
+            margin-right: 15px;
         }
 
         .party-image {
@@ -595,11 +608,12 @@
                 </div>
                 <div class="event-item" style="--delay: 2">
                     <h3>TIME</h3>
-                    <p>OPEN 17:30<br>START 18:00</p>
+                    <p>OPEN 15:00 START 15:20<br>
+                    <span style="font-size: 1rem; font-weight: 400;">Marble Soundsは18:00ごろ出演</span></p>
                 </div>
                 <div class="event-item" style="--delay: 3">
                     <h3>VENUE</h3>
-                    <p><a href="https://livehouse-ys.com/" target="_blank">川崎ライブハウス Y's</a></p>
+                    <p><a href="https://livehouse-ys.com/" target="_blank">横浜ライブハウス Y's</a></p>
                 </div>
                 <div class="event-item" style="--delay: 4">
                     <h3>TICKET</h3>
@@ -680,10 +694,15 @@
             <div class="party-info fade-in">
                 <p class="party-text">
                     ライブ終了後、忘年会的な飲み会も企画しています<br>
-                    観覧でご参加された方もぜひご参加ください！！
+                    ぜひ一緒に乾杯しましょう！
                 </p>
                 <div class="party-details">
-                    <span>時間</span> 20:00頃〜　<span>場所</span> 同会場にて
+                    <div class="party-detail-item">
+                        <span>時間</span> 20:00頃〜
+                    </div>
+                    <div class="party-detail-item">
+                        <span>場所</span> 同会場にて
+                    </div>
                 </div>
                 <div class="party-image">
                     <img src="PARTY.png" alt="After Party イメージ">
